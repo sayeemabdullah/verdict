@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "verdict",
+  "description": "Verdict — a playable courtroom drama for Claude Code",
+  "owner": {
+    "name": "sayeemabdullah"
+  },
+  "plugins": [
+    {
+      "name": "verdict",
+      "description": "A playable courtroom drama. Take one seat — defense, prosecution, judge, or witness — while Claude plays everyone else in the room from sealed private ledgers.",
+      "category": "fun",
+      "source": "."
+    }
+  ]
+}

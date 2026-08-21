@@ -12,21 +12,5 @@
     "trial",
     "roleplay",
     "interactive-fiction"
-  ],
-  "commands": [
-    "./commands/case.md",
-    "./commands/ask.md",
-    "./commands/press.md",
-    "./commands/examine.md",
-    "./commands/object.md",
-    "./commands/theory.md",
-    "./commands/accuse.md",
-    "./commands/notebook.md",
-    "./commands/save.md",
-    "./commands/load.md",
-    "./commands/hint.md"
-  ],
-  "skills": [
-    "./skills/verdict"
   ]
 }
