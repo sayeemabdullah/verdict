@@ -1,0 +1,32 @@
+{
+  "name": "verdict",
+  "version": "0.1.0",
+  "description": "A playable courtroom drama. Take one seat — defense, prosecution, judge, or witness — while Claude plays opposing counsel, the judge, twelve jurors, and every witness from sealed private ledgers. The case's ground truth is locked before play and never bends to let you win.",
+  "author": {
+    "name": "sayeemabdullah"
+  },
+  "license": "MIT",
+  "keywords": [
+    "game",
+    "courtroom",
+    "trial",
+    "roleplay",
+    "interactive-fiction"
+  ],
+  "commands": [
+    "./commands/case.md",
+    "./commands/ask.md",
+    "./commands/press.md",
+    "./commands/examine.md",
+    "./commands/object.md",
+    "./commands/theory.md",
+    "./commands/accuse.md",
+    "./commands/notebook.md",
+    "./commands/save.md",
+    "./commands/load.md",
+    "./commands/hint.md"
+  ],
+  "skills": [
+    "./skills/verdict"
+  ]
+}
