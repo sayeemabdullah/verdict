@@ -53,6 +53,8 @@ Verdict is distributed as a Claude Code plugin. From inside Claude Code:
 
 ```
 /plugin marketplace add sayeemabdullah/verdict
+```
+```
 /plugin install verdict@verdict
 ```
 
