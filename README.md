@@ -274,8 +274,7 @@ skills/verdict/
     trial-judge.md          |
     trial-witness.md       /
     endgame.md             verdict, bench review, reveal
-verdict-build-plan.md      the design spec this was built from
-verdict-how-to-play.md     the player-facing spec
+ROADMAP.md                 what is not built yet, and open questions
 ```
 
 Reference files load only when their phase or role is active, so a trial never
@@ -292,7 +291,7 @@ pre-launch test cases have been run end to end; see
 Designed for but not built: civil cases with a preponderance standard and
 damages, custody disputes decided by a single judge instead of a jury, and an
 appeal mode that tries the fairness of a prior trial — the Judge seat's natural
-home.
+home. See [ROADMAP.md](ROADMAP.md) for those and the open design questions.
 
 ## License
 
