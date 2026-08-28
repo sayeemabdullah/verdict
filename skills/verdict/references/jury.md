@@ -109,86 +109,14 @@ cheat — the reveal names them and shows their real log, which is the payoff.
 
 ---
 
-## 4. Deliberation
+## 4. Handing off
 
-The player does not attend. They get fragments — overheard through a door,
-across a hallway, secondhand from the bailiff.
+Deliberation, verdict resolution, and the hung-jury rules live in `endgame.md`,
+which loads once the closing arguments are done. They are not needed while the
+trial is running; scoring is.
 
-Generate deliberation from the actual scores, then release **4–8 fragments**
-over the course of it. Each fragment must:
-
-- Come from a specific juror and sound like their ledger — their vocabulary,
-  their concerns, their bias speaking without naming itself
-- Reference something that actually happened at trial
-- Reveal **partial** information. A juror arguing hard for one side tells you
-  about that juror, not about the room
-
-Never provide:
-
-- A headcount, a split, or "they're leaning toward…"
-- A complete argument chain start to finish
-- A juror's private bias stated openly
-- Foreshadowing of the verdict
-
-Deliberation can **move scores** — jurors argue each other around, but only
-along ledger lines. A juror persuaded by physical evidence can be pulled by
-another juror's better reading of the physical evidence; they cannot be pulled
-by an emotional appeal they would have discounted in the courtroom. Cap
-deliberation movement at ±2 per juror.
-
-**Resolve the fence-sitters.** Any juror sitting at exactly 0 when deliberation
-opens gets argued at by the room, and moves to ±1 in the direction of the
-room's weight — *provided* some juror in the majority makes an argument that
-lands on the fence-sitter's own ledger. This step is not optional bookkeeping. With
-twelve jurors each needing to clear ±1, a trial left alone will hang almost
-every time on arithmetic rather than on conviction, and a game whose modal ending
-is "no ending" is broken. Deliberation is the release valve.
-
-**Then let genuine holdouts hold.** A juror whose ledger the winning side never
-reached does not get argued around, however lopsided the room, and a fence-sitter
-nobody can reach on their own terms stays at 0. One juror at −2 against eleven
-at +3 is a hung jury and must be written as one.
-
-Give the player a beat of silence between the last fragment and the verdict.
-
----
-
-## 5. Verdict resolution
-
-**Criminal cases (all three launch categories):**
-
-- **Conviction** requires all twelve at **+1 or higher**
-- **Acquittal** requires all twelve at **−1 or lower**
-- Anything else — including any juror sitting at exactly 0 after
-  deliberation — is a **hung jury**
-
-Do not nudge a stray juror to make a clean ending. A hung jury on an 11–1
-split is the correct outcome and a better story than a manufactured
-unanimity.
-
-**Writing the hung jury.** It is a distinct, fully-weighted ending, not a
-consolation prize. It carries its own consequences and should be written to
-land:
-
-- The judge declares a mistrial after the jury reports deadlock
-- The defendant walks out *today*, with the case unresolved — and the
-  prosecution's decision whether to retry is a real, stated question
-- For **Defense**: a partial win. The client is not convicted, but not free
-  of it either
-- For **Prosecution**: a partial loss with a road back — and the endgame
-  should name which juror or jurors held, and what would have reached them
-- The reveal treats it as its own thing, not as a near-miss of a real ending
-
----
-
-## 6. Handing off to the endgame
-
-Pass to `endgame.md`:
-
-- Final score for each juror, with their full movement log
-- The specific ledger line that decided each juror's final position
-- Every evidence item's final state, and which jurors it did and did not
-  reach
-- For a hung jury: the holdouts, and the specific thing that would have moved
-  them
-- Elite: which jurors were false-signal, and where the player read them wrong
+When you hand off, pass: every juror's final score and full movement log, the
+ledger line that decided each one, every evidence item's final state and which
+jurors it did and did not reach, the holdouts and what would have moved them if
+the jury hung, and — on Elite — which jurors were false-signal and where the
+player misread them.

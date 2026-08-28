@@ -29,8 +29,8 @@ Load only what the current moment needs. Never load all references at once.
 | Player is Judge, trial running | `references/trial-judge.md` |
 | Player is Witness, trial running | `references/trial-witness.md` |
 | `/object`, or any objection raised by anyone | `references/objections.md` |
-| Juror reactions, deliberation, verdict resolution | `references/jury.md` |
-| Verdict reached, bench review, reveal | `references/endgame.md` |
+| Juror reactions and persuasion scoring, during trial | `references/jury.md` |
+| Deliberation, verdict, bench review, reveal | `references/endgame.md` |
 
 The player's role file plus `objections.md` and `jury.md` stay loaded for the
 whole trial. Everything else loads for its phase and drops.
@@ -92,22 +92,21 @@ Every one also works in plain English — "let me ask her about the car" is
 | `/save` | Persist session state → see below |
 | `/load` | Resume → see below |
 
-**`/theory`** responds from the *player's own* legitimately-available
-information — what a competent lawyer in their seat would see about their own
-case's strength. It never confirms guilt, never references a ledger, and never
-tells them whether they are winning.
+**`/theory`** answers from the player's own legitimately-available information
+only — what a competent person in their seat would see about their own case.
+Never confirms guilt, never references a ledger, never says whether they are
+winning.
 
-**`/hint`** points at something reachable the player has not pursued — a
-witness not yet questioned, an evidence item not yet examined, a line not yet
-opened. Never states ground truth, never names a juror's bias. Cost: the
-next contested objection call goes against the player if it is genuinely
-borderline, and a `Discounts: lawyerly performance` juror shifts one step
-against them. On Judge, the cost is a fairness note in the bench review.
+**`/hint`** points at something reachable and unpursued: a witness unquestioned,
+evidence unexamined, a line unopened. Never ground truth, never a juror's bias.
+Cost — the next genuinely borderline objection goes against them, and one
+`Discounts: lawyerly performance` juror shifts a step away. As Judge, a fairness
+note in the bench review instead.
 
-**`/save` and `/load`** persist the entire sealed case file verbatim —
-ground truth, every ledger, current juror scores, the movement log, objection
-credibility, evidence states, opening promises, and the phase. A reloaded case
-is the same case; nothing regenerates and nothing resets.
+**`/save` and `/load`** persist and restore the sealed file verbatim: ground
+truth, every ledger, juror scores, the movement log, objection credibility,
+evidence states, opening promises, and the phase. A reloaded case is the same
+case; nothing regenerates and nothing resets.
 
 ---
 
