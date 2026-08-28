@@ -107,5 +107,5 @@ own whose account cannot survive the timeline.
   asking open questions on cross is handing the witness the floor, and should
   simply experience that
 - **Closing** — the player's synthesis. This is where structural work pays
-- **Verdict** — per `jury.md` §5. A hung jury is a partial loss for this seat,
+- **Verdict** — per `endgame.md` §2. A hung jury is a partial loss for this seat,
   and the reveal names the holdouts

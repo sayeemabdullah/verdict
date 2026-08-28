@@ -109,4 +109,4 @@ item whose foundation was laid too fast. Make it reachable.
   prompt them to reconsider
 - **Closing** — the player's last reframe. Struck material may not be
   re-argued; the prosecution will object and it will be sustained
-- **Verdict** — per `jury.md` §5. A hung jury is a partial win for this seat
+- **Verdict** — per `endgame.md` §2. A hung jury is a partial win for this seat

@@ -7,11 +7,83 @@ each is a beat, and the pauses between them are doing work.
 
 ---
 
-## 1. The verdict
+## 1. Deliberation
 
-Resolve per `jury.md` §5. Deliver it in-scene and *short*: the foreperson
-stands, the clerk reads it, the room reacts. No narration of what it means,
-no summary of the trial, no editorial.
+The player does not attend. They get fragments — overheard through a door,
+across a hallway, secondhand from the bailiff.
+
+Generate deliberation from the actual scores, then release **4–8 fragments**
+over the course of it. Each fragment must:
+
+- Come from a specific juror and sound like their ledger — their vocabulary,
+  their concerns, their bias speaking without naming itself
+- Reference something that actually happened at trial
+- Reveal **partial** information. A juror arguing hard for one side tells you
+  about that juror, not about the room
+
+Never provide:
+
+- A headcount, a split, or "they're leaning toward…"
+- A complete argument chain start to finish
+- A juror's private bias stated openly
+- Foreshadowing of the verdict
+
+Deliberation can **move scores** — jurors argue each other around, but only
+along ledger lines. A juror persuaded by physical evidence can be pulled by
+another juror's better reading of the physical evidence; they cannot be pulled
+by an emotional appeal they would have discounted in the courtroom. Cap
+deliberation movement at ±2 per juror.
+
+**Resolve the fence-sitters.** Any juror sitting at exactly 0 when deliberation
+opens gets argued at by the room, and moves to ±1 in the direction of the
+room's weight — *provided* some juror in the majority makes an argument that
+lands on the fence-sitter's own ledger. This step is not optional bookkeeping. With
+twelve jurors each needing to clear ±1, a trial left alone will hang almost
+every time on arithmetic rather than on conviction, and a game whose modal ending
+is "no ending" is broken. Deliberation is the release valve.
+
+**Then let genuine holdouts hold.** A juror whose ledger the winning side never
+reached does not get argued around, however lopsided the room, and a fence-sitter
+nobody can reach on their own terms stays at 0. One juror at −2 against eleven
+at +3 is a hung jury and must be written as one.
+
+Give the player a beat of silence between the last fragment and the verdict.
+
+---
+
+## 2. Verdict resolution
+
+**Criminal cases (all three launch categories):**
+
+- **Conviction** requires all twelve at **+1 or higher**
+- **Acquittal** requires all twelve at **−1 or lower**
+- Anything else — including any juror sitting at exactly 0 after
+  deliberation — is a **hung jury**
+
+Do not nudge a stray juror to make a clean ending. A hung jury on an 11–1
+split is the correct outcome and a better story than a manufactured
+unanimity.
+
+**Writing the hung jury.** It is a distinct, fully-weighted ending, not a
+consolation prize. It carries its own consequences and should be written to
+land:
+
+- The judge declares a mistrial after the jury reports deadlock
+- The defendant walks out *today*, with the case unresolved — and the
+  prosecution's decision whether to retry is a real, stated question
+- For **Defense**: a partial win. The client is not convicted, but not free
+  of it either
+- For **Prosecution**: a partial loss with a road back — and the endgame
+  should name which juror or jurors held, and what would have reached them
+- The reveal treats it as its own thing, not as a near-miss of a real ending
+
+---
+
+## 3. Delivering it
+
+Deliver the verdict in-scene and *short*: the foreperson stands, the clerk reads
+it, the room reacts. No narration of what it means, no summary of the trial, no
+editorial.
 
 Then stop. Let the reaction land before anything else — the defendant's face,
 the gallery, opposing counsel gathering their papers.
@@ -21,7 +93,7 @@ badly. The scores decided it before this moment.
 
 ---
 
-## 2. Judge: bench review
+## 4. Judge: bench review
 
 Judge players only. Run the four-dimension review from `trial-judge.md` §5
 here, before the reveal, and state plainly that the verdict does not factor
@@ -31,7 +103,7 @@ Other seats skip to §3.
 
 ---
 
-## 3. The result for the player's seat
+## 5. The result for the player's seat
 
 One short, direct statement. No hedging, no consolation framing.
 
@@ -47,7 +119,7 @@ case — which is independent of how well they held up.
 
 ---
 
-## 4. The reveal
+## 6. The reveal
 
 The core of the endgame: replay the case from the other side, showing the
 player where their read was right and where they got lucky.
@@ -73,8 +145,7 @@ visible:
 
 **4c. The jury, opened.** The most valuable section. For each of the twelve:
 their one-line sketch, their private bias, their final score, and **the
-specific moment that decided them** — quoted from the movement log in
-`jury.md` §2.
+specific moment that decided them** — quoted from the movement log in `jury.md` §2.
 
 Do not dump all twelve as a flat list. Lead with the three or four who
 decided the outcome, then summarize the rest in a line or two each.
@@ -95,7 +166,7 @@ matters most when they lost.
 
 ---
 
-## 5. Where it turned
+## 7. Where it turned
 
 Two or three specific moments — not a general assessment. Each one:
 
@@ -118,7 +189,7 @@ speak.
 
 ---
 
-## 6. What would have worked
+## 8. What would have worked
 
 Two or three concrete alternate lines, each traceable to something that was
 actually available:
@@ -133,7 +204,7 @@ Real and specific. Not advice — the path that existed.
 
 ---
 
-## 7. Close
+## 9. Close
 
 Offer a replay: same seat at a harder difficulty, or a different seat on a
 fresh case. Note that a new case re-rolls guilt, evidence, and jury from

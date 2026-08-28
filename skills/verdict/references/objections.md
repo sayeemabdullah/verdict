@@ -209,71 +209,26 @@ on correct grounds, and never more than twice per trial.
 
 ## 8. When the player is Judge
 
-The player rules; the two AI lawyers object at each other from their plans,
-and both will test the bench. See `trial-judge.md` for bench-review scoring.
-
-Specific to this seat:
-
-- Objections arrive from **both** sides at a realistic pace — the player
-  cannot coast, and a trial where they sustain everything from one side is
-  scored as inconsistent
-- **Do not signal the correct answer** before the ruling. No leading question
-  from the narration, no hedging. Rule requests are presented flat
-- Log every ruling with: the ground raised, whether it was correct, the
-  posture, and how the player ruled. That log is the bench review
-- If the player rules incorrectly, **the trial proceeds on their ruling.**
-  Never quietly correct it. A wrongly-admitted piece of evidence does its full
-  work on the jury, and shows up in the bench review as reversible error
-- Opposing counsel may make an offer of proof or note an exception for the
-  record after an adverse ruling. A player who does not allow it takes a
-  fairness hit
+The player rules; the two AI lawyers object at each other from their plans, and
+both will test the bench. Everything specific to that seat — pacing, the ruling
+log, not signalling the correct answer, letting a wrong ruling stand, offers of
+proof — is in `trial-judge.md`, which is loaded whenever the player is the judge.
 
 ---
 
 ## 9. Worked rulings
 
-Hand-test against these. They fix the calibration.
+Hand-test against these. They fix the calibration. Three of the eight have no
+fixed answer — the ruling depends on purpose, on the case file, or on the
+witness — and those are the ones worth getting right.
 
-**A.** *Direct examination.* "And you saw the defendant leave through the
-back door at around 10:15, didn't you?" — Defense: "Objection, leading."
-→ **Sustained.** Supplies its own answer, on direct, on a contested fact.
-Question must be rephrased. Nothing struck — no answer was given.
-
-**B.** *Direct examination.* "Ms. Alvarez told me she was terrified of him."
-— Defense: "Objection, hearsay." → Depends entirely on purpose. Offered to
-prove he was frightening: **sustained**. Offered to show the witness's own
-state of mind afterward, or as an excited utterance if she said it during the
-event: **overruled**, and name the exception. Rule on the purpose the
-questioner actually stated or plainly implied — do not construct a helpful
-purpose for them.
-
-**C.** *Cross-examination.* "You were drinking that night, weren't you?" —
-Prosecution: "Objection, leading." → **Overruled.** Leading is proper on
-cross. This is the most common wrong objection players make; rule it flatly
-and do not explain unless asked.
-
-**D.** *Direct.* "What do you think was going through his mind when he picked
-up the knife?" — "Objection, speculation." → **Sustained.** The witness
-cannot know another person's mind. Note: "He looked furious" would be a
-permissible lay observation. The distinction is perception versus inference.
-
-**E.** *The defendant's own words, via a police officer.* "He told me he'd
-been at the house all evening." — Defense: "Objection, hearsay." →
-**Overruled** — party admission, offered against the defendant. Name it. This
-catches players constantly and is worth landing cleanly.
-
-**F.** *Evidence offered.* The knife, with a two-hour gap in the evidence log.
-— "Objection, chain of custody." → With the `excludable` complication live
-and the gap being the named defect: **sustained**, item excluded, and it is
-gone for good. Without it: **overruled** — the gap goes to weight, and the
-player is free to argue it to the jury instead. Same objection, different case
-file, different outcome. That is correct.
-
-**G.** *Cross, fifth repetition of the same question.* — "Objection,
-badgering." → **Sustained** if the witness has answered and counsel is
-hammering; **overruled** if the witness is genuinely evading and counsel is
-still asking real questions. Evasion buys the examiner latitude.
-
-**H.** *Late.* Witness answers a plainly speculative question; two questions
-later the player objects. → **"The answer's in, counsel."** No strike, no
-decay, −1 credibility. The moment is gone.
+| Moment | Objection | Ruling | Why it calibrates |
+|---|---|---|---|
+| **A.** Direct: "You saw him leave at 10:15, didn't you?" | Leading | **Sustained** | Supplies its own answer, on direct, on a contested fact. Rephrase. Nothing struck — no answer was given |
+| **B.** Direct: "She told me she was terrified of him" | Hearsay | **Depends on purpose** | Offered to prove he was frightening: sustained. Offered for her state of mind, or as an excited utterance if said during the event: overruled, and name the exception. Rule on the purpose actually stated or plainly implied — never construct a helpful one for them |
+| **C.** Cross: "You were drinking that night, weren't you?" | Leading | **Overruled** | Leading is proper on cross. The most common wrong objection players make; rule it flatly and do not explain unless asked |
+| **D.** Direct: "What was going through his mind?" | Speculation | **Sustained** | Cannot know another person's mind. "He looked furious" would be a permissible lay observation — the line is perception versus inference |
+| **E.** Officer relays: "He told me he'd been home all evening" | Hearsay | **Overruled** | Party admission, offered against the defendant. Name it. Catches players constantly and is worth landing cleanly |
+| **F.** Knife offered; two-hour gap in the evidence log | Chain of custody | **Depends on the case file** | With the `excludable` complication live and the gap as its named defect: sustained, excluded, gone for good. Without it: overruled — the gap goes to weight, and the player argues it to the jury instead. Same objection, different case file, different outcome. That is correct |
+| **G.** Cross, fifth repetition of one question | Badgering | **Depends on the witness** | Sustained if they have answered and counsel is hammering. Overruled if they are genuinely evading and counsel is still asking real questions — evasion buys the examiner latitude |
+| **H.** Speculative answer given; objection two questions later | (any) | **Too late** | "The answer's in, counsel." No strike, no decay, −1 credibility. The moment is gone |
